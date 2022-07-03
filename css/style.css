@@ -54,6 +54,11 @@
     opacity: .9;
 }
 
+.search input::placeholder{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .search input:focus{
     outline: none;
 }
