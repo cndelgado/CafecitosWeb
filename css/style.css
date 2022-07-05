@@ -2,6 +2,14 @@
     margin: 0;
 }
 
+/*PALETA DE COLORES*/
+:root {
+    --blanco: #ffffff;
+    --grisClaro: #DFF6FF;
+    --azulPrimario: #06283D;
+    --azulSecundario: #1F4690;
+    --negro:#000000;
+}
 .header{
     background-color: #06283D;
     padding-top: 1rem;
@@ -44,7 +52,7 @@
     padding: .2rem;
     padding-left: 1.5rem;
     width: 100%;
-    color: #1F4690;
+    color: var(--negro);
     background-image: url("https://img.icons8.com/ios-glyphs/20/000000/search--v1.png");
     background-position: 1px 1px; 
     background-repeat: no-repeat;
@@ -52,7 +60,7 @@
 }
 
 .search input::placeholder{
-    color: gray;
+    color: var(--negro);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -61,12 +69,12 @@
 }
 
 .nav{
-    background-color: #06283D;
+    background-color: var(--azulPrimario);
     display: flex;
     justify-content: center;
     padding-bottom: .5rem;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .nav ul{
@@ -82,9 +90,9 @@
 
 .ul li a{
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1.5rem;
     display: grid;
-    color: #DFF6FF;
+    color: var(--grisClaro);
 }
 
 .ul li a:hover{
@@ -111,7 +119,7 @@
 }
 
 .container section {
-    background-color: #DFF6FF;
+    background-color: var(--grisClaro);
     border-radius: 17px 17px 0px 0px;
     width: 31%;
     margin: 5px 5px;
@@ -166,4 +174,41 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
+
+/*SECCION DE CONTACTO*/
+
+.formulario {
+    background-color: var(--azulPrimario);
+    width: min(80rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario legend {
+    color: var(--grisClaro);
+    font-weight: 800;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+a:-webkit-any-link {
+    color: var(--grisClaro);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.fieldset-color {
+    color: var(--grisClaro);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--negro);
+}
+
 
